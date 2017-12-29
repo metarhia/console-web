@@ -3,20 +3,15 @@ import HeaderComponent from '../../components/header/HeaderComponent'
 
 const fetchStatistics = (callback) =>
   callback([
-    { value: '2,204', label: 'Views' },
-    { value: '22', label: 'Saves' }
+    { value: 'none', label: 'Statistics' },
+    { value: '0.0.1', label: 'version' }
   ]);
 
 export default class HeaderContainer extends Component {
-  state = { 
+  state = {
     statistics: [],
-    options:[
-      { name: 'insert'},
-      { name: 'edit'},
-      { name: 'delete'},
-      { name: 'find'}
-    ],
-    category: {name: 'Selected category'}
+    currentOption: '',
+    category: {name: 'Category name'}
   }
 
   componentDidMount() {
@@ -24,11 +19,14 @@ export default class HeaderContainer extends Component {
       this.setState({ statistics: statistics }));
   }
 
+  handleItemClick = (e, { name }) => this.setState({ currentOption: name })
+
   render() {
     return <HeaderComponent
       statistics={this.state.statistics}
-      options={this.state.options}
+      currentOption={this.state.currentOption}
       category={this.state.category}
+      handleItemClick={this.handleItemClick}
     />
   }
 }

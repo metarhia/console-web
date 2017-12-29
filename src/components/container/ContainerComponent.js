@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Container } from 'semantic-ui-react'
+import Header from '../../containers/header/HeaderContainer'
 
 export default class ContainerComponent extends Component {
 
@@ -7,9 +8,10 @@ export default class ContainerComponent extends Component {
     return (
       <div>
         <Container>
-          
+          <Header/>
         </Container>
       </div>
     )
   }
 }
+
