@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Container } from 'semantic-ui-react';
+import Header from '../../containers/header/HeaderContainer'
 import SidebarLeftOverlay from '../sidebar/SidebarComponent.js';
 
 export default class ContainerComponent extends Component {
@@ -22,9 +23,11 @@ export default class ContainerComponent extends Component {
     return (
       <div>
         <Container>
+          <Header/>
           <SidebarLeftOverlay />
         </Container>
       </div>
     );
   }
 }
+
