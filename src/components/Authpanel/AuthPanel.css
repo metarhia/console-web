@@ -1,0 +1,27 @@
+.sidebar-auth-panel {
+    margin: 10px auto;
+    text-align: center;
+    border-bottom: 2px solid #4A4A4A;
+    padding-bottom: 10px;
+    height: 100px;
+}
+
+.sidebar-logo {
+    width: 50px;
+    height: 50px;
+    display: inline;
+    margin-right: 3px;
+}
+
+.sidebar-title {
+    display: inline;
+    margin: 10px auto;
+}
+
+.sidebar-logo,
+.sidebar-title {
+    display: inline-block;
+    max-width: 100px;
+    text-align: left;
+    vertical-align: middle;
+}
