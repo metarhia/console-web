@@ -1,0 +1,10 @@
+.main-container {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0px;
+    display: flex;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+}

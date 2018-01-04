@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+.top-right {
+  flex-shrink: 0;
+  border-bottom: 2px solid #4A4A4A;
+  height: 110px;
+  padding: 15px;
+}
+
+.header-top-section {
+  font-size: 16px;
+}
+
+.header-top-section>.header-category-name {
+  font-size: 18px;
+}
+
+.header-top-section>.header-statistics {
+  float: right;
+}
+
+* {
+  outline: none;
+}
+
+nav {
+  margin-top: 20px;
+}
+
+nav a {
+  color: black;
+  margin: 0 0 0 15px;
+  padding: 0;
+  text-align: right;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav a:first-child {
+  margin: 0;
+}
+
+nav a:after {
+  color: #aaa;
+  content: "|";
+  margin-left: 12px;
+}
+
+nav a:last-child:after {
+  content: "";
+}
