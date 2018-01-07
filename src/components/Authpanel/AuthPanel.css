@@ -1,7 +1,7 @@
 .sidebar-auth-panel {
     margin: 10px auto;
     text-align: center;
-    border-bottom: 2px solid #4A4A4A;
+    border-bottom: 2px solid #808080;
     padding-bottom: 10px;
     height: 100px;
 }
@@ -25,3 +25,4 @@
     text-align: left;
     vertical-align: middle;
 }
+
