@@ -19,10 +19,15 @@
 .ReactTable .rt-thead .rt-th.-cursor-pointer {
   border-right-style: solid;
   border-color: white;
+  border-width: 2px;
 }
 
 .ReactTable .rt-tbody .rt-td {
   border-style: solid;
   border-color: white;
   border-width: 1px;
+}
+
+.ReactTable .rt-thead.-filters .rt-th {
+  border-right: 2px solid white
 }
