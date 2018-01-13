@@ -6,7 +6,7 @@ export default class HeaderComponent extends Component {
     return (
       <div className='top-right'>
         <div className='header-top-section'>
-          <span className="header-category-name">"CATEGORY NAME"</span>
+          <span className="header-category-name">CATEGORY NAME</span>
           <span className="header-statistics">Statistics, versions</span>
         </div>
         <div>

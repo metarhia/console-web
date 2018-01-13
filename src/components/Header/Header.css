@@ -1,17 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=PT+Sans');
 .top-right {
   flex-shrink: 0;
   border-bottom: 2px solid #808080;
   height: 110px;
   padding: 15px;
+  font-family: inherit;
 }
 
 .header-top-section {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .header-top-section>.header-category-name {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .header-top-section>.header-statistics {
@@ -32,7 +32,7 @@ nav a {
   padding: 0;
   text-align: right;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 nav a:first-child {
@@ -52,4 +52,3 @@ nav a:last-child:after {
 nav a:hover {
     color: #ffffff;
 }
-

@@ -1,4 +1,3 @@
-@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 .sidebar-search-wrapper {
     background-color: #000;
     padding-bottom: 10px;
@@ -10,7 +9,7 @@
     position: absolute;
     top: 12px;
     right: 7px;
-    font-size: 14px;
+    font-size: 16px;
     color: yellow;
 }
 
@@ -21,14 +20,14 @@
     color: #ffff00;
     box-sizing: border-box;
     font-family: 'Arvo';
-    font-size: 14px;
+    font-size: 16px;
     padding: 10px 0px;
     position: relative;
     width: 100%;
+    font-family: inherit;
 }
 
 .sidebar-search-input:focus {
     border-bottom: 1px solid #ffffff;
     outline: none;
 }
-

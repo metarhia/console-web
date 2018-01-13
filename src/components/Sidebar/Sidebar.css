@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
 .sidenav {
     height: 100%;
     width: 200px;
@@ -8,14 +9,15 @@
     color: white;
     overflow-x: hidden;
     border-right: 2px solid #808080;
-    overflow-x: hidden; 
+    overflow-x: hidden;
     overflow-y: hidden;
+    font-family: inherit;
 }
 
 .sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 17px;
     color: #ffff00;
     display: block;
 }
@@ -23,4 +25,3 @@
 .sidenav a:hover {
     color: #ffffff;
 }
-

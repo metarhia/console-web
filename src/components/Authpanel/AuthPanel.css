@@ -4,6 +4,7 @@
     border-bottom: 2px solid #808080;
     padding-bottom: 10px;
     height: 100px;
+    font-family: inherit;
 }
 
 .sidebar-logo {
@@ -26,3 +27,6 @@
     vertical-align: middle;
 }
 
+span {
+  font-size: 16px;
+}
