@@ -1,0 +1,33 @@
+
+.bottom {
+    flex-grow: 1;
+    overflow-y: auto;
+    border: none;
+}
+
+.ReactTable .rt-thead .rt-tr {
+  text-align: left;
+  font-weight: 900;
+  font-size: 15px;
+}
+
+.ReactTable {
+  color: green;
+  background: black;
+}
+
+.ReactTable .rt-thead .rt-th.-cursor-pointer {
+  border-right-style: solid;
+  border-color: white;
+  border-width: 2px;
+}
+
+.ReactTable .rt-tbody .rt-td {
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+}
+
+.ReactTable .rt-thead.-filters .rt-th {
+  border-right: 2px solid white
+}
