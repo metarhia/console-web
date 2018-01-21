@@ -4,7 +4,19 @@
   border: none;
 }
 
-.ReactTable .rt-thead .rt-tr {
+.ReactTable .rt-thead {
+	width: calc(100% - 10px);
+}
+
+.ReactTable .rt-tbody {
+	height: 750px;
+	overflow-y: auto;
+}
+
+.ReactTable .rt-thead .rt-th {
+  border-right: dotted grey 1px;
+  border-bottom: dotted grey 1px;
+  font-size: 19px;
   text-align: left;
   font-weight: bold;
   font-size: 15px;
