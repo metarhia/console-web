@@ -5,12 +5,12 @@
 }
 
 .ReactTable .rt-thead {
-	width: calc(100% - 10px);
+  width: calc(100% - 10px);
 }
 
 .ReactTable .rt-tbody {
-	height: 750px;
-	overflow-y: auto;
+  height: 750px;
+  overflow-y: auto;
 }
 
 .ReactTable .rt-thead .rt-th {
