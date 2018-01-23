@@ -1,51 +1,51 @@
 .sidebar-auth-panel {
-    margin: 10px auto;
-    text-align: center;
-    border-bottom: 2px solid #808080;
-    padding-bottom: 10px;
-    height: 100px;
-    font-family: inherit;
+  margin: 10px auto;
+  text-align: center;
+  border-bottom: 2px solid #808080;
+  padding-bottom: 10px;
+  height: 100px;
+  font-family: inherit;
 }
 
 .sidebar-logo {
-    float: left;
-    width: 51px;
-    height: 51px;
-    display: inline;
-    margin: 0 3px 0 10px;
+  float: left;
+  width: 51px;
+  height: 51px;
+  display: inline;
+  margin: 0 3px 0 10px;
 }
 
 .sidebar-title {
-    display: inline;
-    margin: 10px 30px 10px 0;
+  display: inline;
+  margin: 10px 30px 10px 0;
 }
 
 .sidebar-logo,
 .sidebar-title {
-    display: inline-block;
-    max-width: 100px;
-    text-align: left;
-    vertical-align: middle;
+  display: inline-block;
+  max-width: 100px;
+  text-align: left;
+  vertical-align: middle;
 }
 
 .sidebar-username {
-    display: inline;
-    font-size: 16px;
+  display: inline;
+  font-size: 16px;
 }
 
 .sidebar-button {
-    background-color: transparent;
-    border: solid yellow 1px;
-    border-radius: 4px;
-    padding: 3px;
-    margin: 0 5px;
-    color: yellow;
+  background-color: transparent;
+  border: solid yellow 1px;
+  border-radius: 4px;
+  padding: 3px;
+  margin: 0 5px;
+  color: yellow;
 }
 
 .sidebar-username,
 .sidebar-button {
-    display: inline-block;
-    max-width: 100px;
-    text-align: left;
-    vertical-align: middle;
+  display: inline-block;
+  max-width: 100px;
+  text-align: left;
+  vertical-align: middle;
 }
