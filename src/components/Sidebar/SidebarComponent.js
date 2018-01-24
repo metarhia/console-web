@@ -3,18 +3,26 @@ import AuthPanel from '../Authpanel/AuthPanelComponent.js';
 import Searchbar from '../Searchbar/SearchbarComponent.js';
 import './Sidebar.css';
 
-const SidebarLeftOverlay = () => (
+const MenuItem = ({id, name, href}) => (
+  <a href={href}>
+    {name}
+  </a>
+)
+
+const SidebarLeftOverlay = (props) => (
   <div className="sidenav">
-    <AuthPanel/>
-    <Searchbar/>
+    <AuthPanel
+      handleAuthClick={props.handleAuthClick}
+      isLoggedIn={props.isLoggedIn}
+      username={props.username}
+    />
+    <Searchbar
+    handleInputChange={props.handleInputChange}
+    currentMenuItem={props.currentMenuItem}/>
     <div className="sidebar-menu">
-      <a href="#">Create category</a>
-      <a href="#">Servers</a>
-      <a href="#">Health</a>
-      <a href="#">Accounts</a>
-      <a href="#">Categories</a>
-      <a href="#">Articles</a>
-      <a href="#">Other tools</a>
+      {props.menuItems.map(item =>
+        <MenuItem key={item.id} {...item}/>
+      )}
     </div>
   </div>
 );

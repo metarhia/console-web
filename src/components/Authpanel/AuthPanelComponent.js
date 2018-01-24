@@ -1,60 +1,33 @@
-import React, { Component } from 'react';
+import React from 'react';
 import logo from '../../assets/img/logo.png';
 import './AuthPanel.css';
 
-function LoginButton(props) {
-  return (
-    <button  className='sidebar-button' onClick={props.onClick}>
+const AuthButton = ({handleAuthClick, isLoggedIn, username}) => {
+  return isLoggedIn ? (
+    <div>
+      <button className='sidebar-button' onClick={handleAuthClick}>
+        Sign Out
+      </button>
+      <span className='sidebar-username'>{username}</span>
+    </div>
+  ) : (
+    <button  className='sidebar-button' onClick={handleAuthClick}>
       Sign In
     </button>
-  );
+  )
 }
 
-function LogoutButton(props) {
-  return (
-    <button className='sidebar-button' onClick={props.onClick}>
-      Sign Out
-    </button>
-  );
-}
+const AuthPanel = (props) => (
+  <div className='sidebar-auth-panel'>
+    <img className='sidebar-logo' src={logo} alt='logo'/>
+    <h2 className='sidebar-title'>Metarhia</h2>
+    <hr style={{
+      width: '80%',
+      border: '1px solid grey'
+    }}/>
+    <AuthButton {...props}/>
+  </div>
+)
 
-export default class AuthPanel extends Component {
-  constructor(props) {
-    super(props);
-    this.handleLoginClick = this.handleLoginClick.bind(this);
-    this.handleLogoutClick = this.handleLogoutClick.bind(this);
-    this.state = {isLoggedIn: false};
-  }
-
-  handleLoginClick() {
-    this.setState({isLoggedIn: true});
-  }
-
-  handleLogoutClick() {
-    this.setState({isLoggedIn: false});
-  }
-
-  render() {
-    const isLoggedIn = this.state.isLoggedIn;
-
-    return(
-      <div className='sidebar-auth-panel'>
-        <img className='sidebar-logo' src={logo}/>
-        <h2 className='sidebar-title'>Metarhia</h2>
-        <hr style={{
-          width: '80%',
-          border: '1px solid grey'
-        }}/>
-          {isLoggedIn ? (
-            <div>
-              <LogoutButton onClick={this.handleLogoutClick} />
-              <span className='sidebar-username'>Username</span>
-            </div>
-          ) : (
-            <LoginButton onClick={this.handleLoginClick} />
-          )}
-      </div>
-    )
-  }
-}
+export default AuthPanel;
 
