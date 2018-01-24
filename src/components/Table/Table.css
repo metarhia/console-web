@@ -13,15 +13,6 @@
   overflow-y: auto;
 }
 
-.ReactTable .rt-thead .rt-th {
-  border-right: dotted grey 1px;
-  border-bottom: dotted grey 1px;
-  font-size: 19px;
-  text-align: left;
-  font-weight: bold;
-  font-size: 15px;
-}
-
 .ReactTable {
   height: 100%;
   color: green;
@@ -39,6 +30,30 @@
   border-top: dotted grey 1px;
   border-right: dotted grey 1px;
   font-size: 17px;
+}
+
+.ReactTable {
+  height: 100%;
+  color: green;
+}
+
+.ReactTable .rt-thead .rt-th {
+  border-right: dotted grey 1px;
+  border-bottom: dotted grey 1px;
+  font-size: 19px;
+  text-align: left;
+  font-weight: bold;
+  color: white;
+}
+
+.ReactTable .rt-thead.-filters .rt-th {
+  border-right: dotted grey 1px;
+  font-family: 'PT Sans';
+  font-size: 15px;
+}
+
+.ReactTable .rt-thead.-filters .rt-th:last-child {
+  border-right: none;
 }
 
 .ReactTable .rt-thead.-filters .rt-th {

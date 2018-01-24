@@ -98,3 +98,4 @@ export default class TableComponent extends Component {
     );
   }
 }
+

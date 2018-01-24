@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import LeftSection from '../LeftSection/LeftSection';
 import RightSection from '../RightSection/RightSection';
-import './MainContainer.css'
+import './MainContainer.css';
 
 export default class ContainerComponent extends Component {
   constructor(props) {
@@ -17,3 +17,4 @@ export default class ContainerComponent extends Component {
     );
   }
 }
+
