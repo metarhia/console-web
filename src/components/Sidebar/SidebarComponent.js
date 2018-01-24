@@ -20,3 +20,4 @@ const SidebarLeftOverlay = () => (
 );
 
 export default SidebarLeftOverlay;
+
