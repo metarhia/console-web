@@ -3,10 +3,10 @@
 }
 
 .column {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: black;
-    color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
 }
 
