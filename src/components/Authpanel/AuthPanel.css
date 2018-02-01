@@ -35,8 +35,7 @@
 
 .sidebar-button {
   background-color: transparent;
-  border: solid yellow 1px;
-  border-radius: 4px;
+  border: none;
   padding: 3px;
   margin: 0 5px;
   color: yellow;
