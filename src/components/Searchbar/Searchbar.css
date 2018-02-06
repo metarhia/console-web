@@ -1,3 +1,4 @@
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 .sidebar-search-wrapper {
   background-color: #000;
   padding-bottom: 10px;
@@ -24,7 +25,6 @@
   padding: 10px 0px;
   position: relative;
   width: 100%;
-  font-family: inherit;
 }
 
 .sidebar-search-input:focus {

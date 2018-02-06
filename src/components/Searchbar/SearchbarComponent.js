@@ -3,14 +3,17 @@ import './Searchbar.css';
 
 export default class Searchbar extends Component {
   render() {
+    const handleInputChange = this.props.handleInputChange;
+    const currentMenuItem = this.props.currentMenuItem;
     return (
       <div className="sidebar-search-wrapper">
         <input
           className="sidebar-search-input"
-          placeholder="Find category"
           type="text"
-        />
-        <span className="fa fa-search" />
+          placeholder="Find category"
+          onChange={handleInputChange}
+          value={currentMenuItem}/>
+        <span className="fa fa-search"></span>
       </div>
     );
   }

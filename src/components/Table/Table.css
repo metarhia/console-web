@@ -2,41 +2,17 @@
 
 .bottom {
   flex-grow: 1;
-  overflow-y: auto;
   border: none;
 }
 
+.ReactTable {
+  height: 100%;
+  color: green;
+  height: 600px;
+}
+
 .ReactTable .rt-thead {
-  width: calc(100% - 10px);
-}
-
-.ReactTable .rt-tbody {
-  height: 750px;
-  overflow-y: auto;
-}
-
-.ReactTable {
-  height: 100%;
-  color: green;
-  background: black;
-  font-family: inherit;
-}
-
-.ReactTable .rt-thead .rt-th.-cursor-pointer {
-  border-right: dotted grey 1px;
-  border-bottom: dotted grey 1px;
-  font-size: 19px;
-}
-
-.ReactTable .rt-tbody .rt-td {
-  border-top: dotted grey 1px;
-  border-right: dotted grey 1px;
-  font-size: 17px;
-}
-
-.ReactTable {
-  height: 100%;
-  color: green;
+  overflow-y: scroll;
 }
 
 .ReactTable .rt-thead .rt-th {
@@ -58,15 +34,17 @@
   border-right: none;
 }
 
-.ReactTable .rt-thead.-filters .rt-th {
-  border-right: 1px dotted grey;
+.ReactTable .rt-thead.-filters input {
+  background-color: transparent;
+  border: none;
+  color: green;
+  font-family: inherit;
 }
 
-.ReactTable .rt-thead.-filters input,.ReactTable .rt-thead.-filters select {
-  border-radius: 0;
-  border: none;
-  background-color: black;
-  color: green;
+.ReactTable .rt-tbody .rt-td {
+  border-bottom: dotted grey 1px;
+  border-right: dotted grey 1px;
+  font-size: 17px;
 }
 
 .fa {
