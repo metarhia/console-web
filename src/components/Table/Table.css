@@ -1,3 +1,5 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+
 .bottom {
   flex-grow: 1;
   overflow-y: auto;
@@ -65,4 +67,26 @@
   border: none;
   background-color: black;
   color: green;
+}
+
+.fa {
+  position: relative;
+  z-index: 11;
+}
+
+.fa-sort {
+  opacity: 0.5;
+}
+
+.fa-sort-amount-desc, .fa-sort-amount-asc {
+  opacity: 1;
+}
+
+.title {
+  float: left;
+}
+
+.title-content {
+  float: right;
+  margin-right: 10px;
 }
