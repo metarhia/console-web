@@ -28,4 +28,3 @@ const SidebarLeftOverlay = (props) => (
 );
 
 export default SidebarLeftOverlay;
-

@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import SidebarLeftOverlay from '../../components/Sidebar/SidebarComponent';
 import './LeftSection.css';
 
@@ -54,7 +54,7 @@ export default class LeftSection extends Component {
           menuItems={displayMenuItems}
         />
       </div>
-    )
+    );
   }
 }
 

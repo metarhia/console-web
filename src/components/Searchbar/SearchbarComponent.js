@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import './Searchbar.css';
 
 export default class Searchbar extends Component {
@@ -15,7 +15,6 @@ export default class Searchbar extends Component {
           value={currentMenuItem}/>
         <span className="fa fa-search"></span>
       </div>
-    )
+    );
   }
 }
-

@@ -30,4 +30,3 @@ const AuthPanel = (props) => (
 )
 
 export default AuthPanel;
-
